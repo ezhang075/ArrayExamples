@@ -42,15 +42,33 @@ class Main
          *          Copy the elements of ar1 into ar2.
          */
         System.out.println("**  printing ar2 * ");
+        int[] ar2;
+           
+        
+        // 
+        // ar2 = ar1.clone() also does this
+        // ar2 = ar1, just copies the address so you are not copying the array
+        //
+        ar2= new int[ ar1.length ]; // sets the size of the array to equal ar1.
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            ar2[i]=ar1[i];
+        }
+        
+        //                      ar2[    i    ] =   i    
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2[" + i + "] = "+ar2[i]);
+        //                      ar2[    i    ] =   i
+        
+        
+        
+        
+
         //int[] ar2 = new int[n];
         
-        int[] ar2 = ar1.clone();
+        //int[] ar2 = ar1.clone();
         
-        for (int i=0; i<n ; i++)
-            ar2[i]=ar1[i];
-            
-        for (int i=0; i<n; i++)
-            System.out.println("ar2["+i+"] = "+ar2[i]);
+        
         
         
         
@@ -58,8 +76,15 @@ class Main
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
+        System.out.println("*** Task 3 *");
         
+        for (int i=0; i<ar1.length; i++)
+            {
+                ar1[i] = ar1[i]+1;
 
+            }
+        for (int i=0 ; i<ar1.length ; i++)
+            System.out.println("ar1[" + i + "] = "+ar1[i]);
         
         
         /*
@@ -71,6 +96,22 @@ class Main
          */
         
         
+        System.out.println("*** Task 4 *");
+        int[] ar3 = new int[ar1.length * 2];
+        
+        for (int i=0 ; i<ar1.length ; i++)
+        {
+            ar3[i]=ar1[i];
+        }
+        
+         for (int i=0 ; i<ar1.length ; i++)
+        {
+            ar3[i]=ar1[i];
+        }
+        
+        for (int i=0 ; i<ar1.length ; i++)
+        {    System.out.println("ar3[" + i + "] = "+ar3[i]);
+        }
         /*
          * Task 5.  Switch the first and last element of ar1.
          *          print out the new ar1.  Then switch them back
