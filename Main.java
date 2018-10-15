@@ -204,6 +204,7 @@ class Main
         int k=0;
         for (int i=0 ; i<ar2.length ; i++)
         {   
+           System.out.println(ar2[i]); // Just print it out to see
             if(i%2==1)
            {
             ar2odds[k]=ar2[i];
