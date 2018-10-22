@@ -211,14 +211,37 @@ class Main
             k++;
            }
         }
-        
-        
+        for (int=0 ; i<k ; i++) 
+        {
+            System.out.println(ar2odds[1]);
+        }
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
-         
+         */
         
+        int [] ar4 = new int[ar2.length];
+
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            System.out.println(ar2[i]);
+            if (ar2[i] %2 == 1)
+            {
+                14++;    
+            }
+         int [] ar4 = new int[14];
+         k=0;
+         for (int i=0; i<ar2.length ; i++)
+         {
+             if (ar2[i]%2==1)
+             {
+                 ar4[k] = ar2[i];
+                 k++;
+                }
+                
+            }
+         
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
