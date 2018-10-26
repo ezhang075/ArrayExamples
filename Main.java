@@ -211,7 +211,7 @@ class Main
             k++;
            }
         }
-        for (int=0 ; i<k ; i++) 
+       /// for (int=0 ; i<k ; i++) 
          {           System.out.println(ar2odds[1]);
             }
         
@@ -230,13 +230,13 @@ class Main
             {
                 14++;    
             }
-         int [] ar4 = new int[14];
+         //int [] ar4 = new int[14];
          k=0;
-         for (int i=0; i<ar2.length ; i++)
+         for (int j=0; j<ar2.length ; j++)
          {
-             if (ar2[i]%2==1)
+             if (ar2[j]%2==1)
              {
-                 ar4[k] = ar2[i];
+                 ar4[k] = ar2[j];
                  k++;
                 }
                 
@@ -257,9 +257,9 @@ class Main
             }
         
         System.out.println("**New ar4");
-        for (int i=ar4.length-1 ; i>0 ; i--)
+        for (int i=ar4.length-1 ; i>0 ; i--) {
             ar4[i+1]=ar4[i];
-            
+        }
             
             
          System.out.println("** Task 10 ** ");
@@ -316,11 +316,16 @@ class Main
          *  Count how many words have more than 5 letters.
          */
         
+  
+        
+        
+
+
+String[] ar5 = new String[16];  
+    
+System.out.println("** Task 12 ** ");
+        
 ar5[0]="Four ";
-ar5[1]="score";
-ar5[2]="and";
-ar5[3]="seven";
-ar5[4]="years";
 ar5[5]="ago";
 ar5[6]="our";
 ar5[7]="fathers";
@@ -329,24 +334,29 @@ ar5[9]="forth";
 ar5[10]="on";
 ar5[11]=" this";
 ar5[12]="continent";
+ar5[1]="score";
+ar5[2]="and";
+ar5[3]="seven";
+ar5[4]="years";
 ar5[13]="a";
 ar5[14]="new";
 ar5[15]="nation";      
         
+
+    
         
   int [] ar6 = new int[ar5.length];
   int len=ar5[i].length();
 
   int amount = 0;
+  
   for (int i=0 ; i<ar5.length ; i++) {
-     if(len>=5)
+     if(len >5)
         amount++;
-      char letter = input.charAt(i);
-     amount++; 
-     output = input;
+      
     }
     
-    System.out.println(output += "\n" + amount);
+    System.out.println("Task 12 is " + amount);
     
     
     
@@ -394,4 +404,8 @@ ar5[15]="nation";
           */
         
     }
+} 
 }
+
+
+
