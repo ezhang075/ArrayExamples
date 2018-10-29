@@ -377,6 +377,16 @@ ar5[15]="nation";
          * a vowel
          */
         
+        String[] monsterArray={ "Cookie",  "Grover",  "Oscar the Grouch" , "Elmo", "Rosita"}; // 
+
+        
+        
+        String d =monsterArray[0];
+        char c=monsterArray[i].toLowerCase().charAt(0);
+
+        if (c=='a' || c=='e'|| c=='i' || c=='o'|| c=='u')
+            System.out.println(d);
+        
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
